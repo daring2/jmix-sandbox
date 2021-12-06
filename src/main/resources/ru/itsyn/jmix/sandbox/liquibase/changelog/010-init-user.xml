@@ -21,7 +21,7 @@
             <column name="LAST_NAME" type="varchar(255)"/>
             <column name="PASSWORD" type="varchar(255)"/>
             <column name="EMAIL" type="varchar(255)"/>
-            <column name="ACTIVE" type="boolean"/>
+            <column name="IS_ACTIVE" type="boolean"/>
             <column name="TIME_ZONE_ID" type="VARCHAR(255)"/>
         </createTable>
 
@@ -41,7 +41,7 @@
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="admin"/>
             <column name="PASSWORD" value="{noop}admin"/>
-            <column name="ACTIVE" valueBoolean="true"/>
+            <column name="IS_ACTIVE" valueBoolean="true"/>
         </insert>
 
         <insert tableName="SB_USER" dbms="oracle, mysql, mariadb">
@@ -49,7 +49,7 @@
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="admin"/>
             <column name="PASSWORD" value="{noop}admin"/>
-            <column name="ACTIVE" valueBoolean="true"/>
+            <column name="IS_ACTIVE" valueBoolean="true"/>
         </insert>
 
     </changeSet>
