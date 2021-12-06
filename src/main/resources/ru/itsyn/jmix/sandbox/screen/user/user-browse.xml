@@ -54,7 +54,7 @@
                 <column id="lastName"/>
                 <column id="email"/>
                 <column id="timeZoneId"/>
-                <column id="active"/>
+                <column id="isActive"/>
             </columns>
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"

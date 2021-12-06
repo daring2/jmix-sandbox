@@ -40,7 +40,7 @@
                 <textField id="lastNameField" property="lastName"/>
                 <textField id="emailField" property="email"/>
                 <comboBox id="timeZoneField" property="timeZoneId"/>
-                <checkBox id="activeField" property="active"/>
+                <checkBox id="activeField" property="isActive"/>
             </column>
         </form>
         <hbox id="editActions" spacing="true">

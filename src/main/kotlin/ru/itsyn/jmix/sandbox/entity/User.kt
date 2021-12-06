@@ -49,8 +49,8 @@ open class User : JmixUserDetails, HasTimeZone {
     @Column(name = "EMAIL")
     var email: @Email String? = null
 
-    @Column(name = "ACTIVE")
-    var active: Boolean? = true
+    @Column(name = "IS_ACTIVE")
+    var isActive: Boolean? = true
 
     @Column(name = "TIME_ZONE_ID")
     @get:JvmName("getTimeZoneId_")
@@ -76,7 +76,7 @@ open class User : JmixUserDetails, HasTimeZone {
 
     override fun isCredentialsNonExpired(): Boolean = true
 
-    override fun isEnabled(): Boolean = active == true
+    override fun isEnabled(): Boolean = isActive == true
 
     @get:DependsOnProperties("firstName", "lastName", "username")
     @get:InstanceName
